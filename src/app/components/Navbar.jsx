@@ -10,6 +10,10 @@ const Navbar = () => {
 
     const links = [
         {
+            title: 'Posts',
+            path: '/posts'
+        },
+        {
             title: 'About',
             path: '/about'
         },
@@ -22,6 +26,10 @@ const Navbar = () => {
             path: '/service'
         },
         {
+            title: 'Dashboard',
+            path: '/dashboard'
+        },
+        {
             title: 'Blogs',
             path: '/blogs'
         },
@@ -29,6 +37,12 @@ const Navbar = () => {
 
     const handleLogin = () => {
         router.push('/login')
+    }
+
+    if(pathName.includes('/dashboard')){
+        return (
+            <div>navbar</div>
+        )
     }
 
     return (
